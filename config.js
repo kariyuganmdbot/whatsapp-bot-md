@@ -9,7 +9,7 @@ const DATABASE_URL =
   process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '').trim(),
+  SESSION_ID: (process.env.SESSION_ID || '7_8_3a73_cdc7_2e89').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -28,11 +28,11 @@ module.exports = {
           logging: false,
         }),
   HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
-  SUDO: process.env.SUDO || '',
+  SUDO: process.env.SUDO || '918080418033',
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
   HEROKU_API_KEY: process.env.HEROKU_API_KEY,
   BRANCH: 'master',
-  STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,LyFE',
+  STICKER_PACKNAME: process.env.STICKER_PACKNAME || ／𝛫𝛂𝛎𝛊𝛄𝛖𝛗𝛂𝛈 ꭗ𝝐𐑾 💌',
   ALWAYS_ONLINE: toBool(process.env.ALWAYS_ONLINE),
   LOG_MSG: toBool(process.env.LOG_MSG) || false,
   RMBG_KEY: process.env.RMBG_KEY || 'null',
@@ -46,11 +46,11 @@ module.exports = {
   ANTISPAM_MSG: process.env.ANTISPAM_MSG || '_Antispam Detected &mention kicked_',
   ANTIWORDS_MSG: process.env.ANTIWORDS_MSG || '_AntiWord Detected &mention kicked_',
   ANTIWORDS: process.env.ANTIWORDS || 'word',
-  MENTION: process.env.MENTION || '',
+  MENTION: process.env.MENTION || '{"linkPreview": {"head": "／𝘒𝘈𝘙𝘐𝘠𝘜𝘎𝘈𝘕 𝘚𝘌𝘙 💌","body": "𝜤 ᴀᴍ ʏᴏᴜʀ𝜹 💘","showAdAttribution": true,"renderLargerThumbnail": true,"mediaType": 1,"thumbnail": "https://telegra.ph/file/242fd4b8580dfe60a51dc.jpg",         "sourceUrl": "https://www.instagram.com/whois__akashh"},"waveform": [ 90,0,90,0,90 ] }',
   MAX_UPLOAD: process.env.MAX_UPLOAD || 230,
   REJECT_CALL: toBool(process.env.REJECT_CALL),
   VPS: toBool(process.env.VPS),
-  AUTO_STATUS_VIEW: (process.env.AUTO_STATUS_VIEW || 'false').trim(),
+  AUTO_STATUS_VIEW: (process.env.AUTO_STATUS_VIEW || 'true').trim(),
   SEND_READ: toBool(process.env.SEND_READ),
   KOYEB: toBool(process.env.KOYEB),
   KOYEB_NAME: (process.env.KOYEB_NAME || '').trim(),
